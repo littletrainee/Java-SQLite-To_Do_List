@@ -1,0 +1,22 @@
+{
+    "java.project.sourcePaths": ["src", "."],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar",
+            "lib/sqlite-jdbc-3.45.1.0.jar",
+            "sqlite-jdbc-3.45.1.0.jar",
+            "slf4j-simple-2.0.12.jar",
+            "slf4j-api-2.0.12.jar"
+        ]
+    },
+    "sqltools.useNodeRuntime": true,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "ToDoList",
+            "database": "${workspaceFolder:javasqlite}/ToDoList.db"
+        }
+    ]
+}
